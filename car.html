@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <img src="car/car.png" width="100%" height="100%" id="car">
+
+    <div class="engine" onmouseover="show1()"></div>
+    <div class="wheel" onmouseover="show2()"></div>
+    <div class="seat" onmouseover="show3()"></div>
+
+    <div id="image1">
+        <img src="car/engine.jpg">
+        <h3 style="text-align: center;">超強馬力引擎</h3>
+    </div>
+    <div id="image2">
+        <img src="car/wheel.png">
+        <h3 style="text-align: center;">21吋鋼圈,超快的!</h3>
+    </div>
+    <div id="image3">
+        <img src="car/seat.png">
+        <h3 style="text-align: center;">超舒適的,會睡著耶!</h3>
+    </div>
+
+
+    <script>
+        function show1(){image1.style.display="block";}
+        function noshow1(){image1.style.display="none";}
+
+        function show2(){image2.style.display="block";}
+        function noshow2(){image2.style.display="none";}
+        
+        function show3(){image3.style.display="block";}
+        function noshow3(){image3.style.display="none";}
+        
+    </script>
+</body>
+</html>

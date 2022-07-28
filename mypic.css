@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: yellow;
+}
+.me{
+    width: 200px;
+    height: 100px;
+    /* background-color: blueviolet; */
+
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.me:hover{
+    border: 5px solid powderblue;
+    background-color: blue;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.me2{
+    width: 100px;
+    height: 200px;
+    /* background-color: aquamarine; */
+    border-radius: 100%;
+    position: absolute;
+    top: 40%;
+    left: 63%;
+}
+
+.me2:hover{
+    border: 5px solid teal;
+    background-color: orange;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+
+.party1{
+    width: 100px;
+    height: 100px;
+    /* background-color: blueviolet; */
+
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.party1:hover{
+    border: 7px solid rebeccapurple;
+    background-color: yellow;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#me{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    display: none;
+}
+
+#me img{
+    width: 50px;
+    height: 100px;
+}
+
+#image2{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    display: none;
+}
+
+#image2 img{
+    width: 100px;
+    height: 150px;
+}
+
+#image3{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    display: none;
+}
+
+#image3 img{
+    width: 350px;
+    height: 220px;
+}

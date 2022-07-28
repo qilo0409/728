@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love button</title>
+</head>
+<body style="text-align: center;">
+    <h1>想跟你說的話</h1>
+
+    <h2>按按鈕來顯示訊息</h2>
+    <input type="button" value="第一句" onclick="message()" style="color: ;">
+    <input type="button" value="第二句" id="btn2">
+    <input type="button" value="第三句" id="btn3">
+    <input type="button" value="第四句" id="btn4">
+    <input type="button" value="第五句" id="btn5">
+
+    <br>
+
+    <p id="display"></p>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <h2>選擇背景樣式</h2>
+    <select name="" id="colors" onchange="change()">
+        <option value="transparent">無色</option>
+        <option value="pink">粉色泡泡</option>
+        <option value="purple">紫色魔力</option>
+        <option value="green">綠光罩頂</option>
+        <option value="gold">金生只有你</option>
+    </select>
+
+
+    <script>
+        function message(){
+            document.getElementById("display").innerHTML="不管你怎樣我都尬意";
+        }
+
+    
+    document.getElementById("btn2").addEventListener("click",function(){
+        document.getElementById("display").innerHTML= "我都在你身邊"
+    })
+
+    document.getElementById("btn3").addEventListener("click",() => {
+        document.getElementById("display").innerHTML= "做你隨時的依靠"
+    })
+
+    document.getElementById("btn4").onclick=() =>{
+        document.getElementById("display").innerHTML= "你放心把身心交給我"
+    }
+
+    const btn5= document.getElementById("btn5");
+    const love= document.getElementById("display");
+
+    function lovefunction(){
+        love.innerHTML="我會讓你成為最幸福的人";
+
+    }
+    btn5.addEventListener("click",lovefunction);
+
+    function change(){
+        document.body.style.background=document.getElementById("colors").value
+    }
+
+    </script>
+</body>
+</html>

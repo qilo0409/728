@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+</head>
+<body>
+    <h1>onchange event 練習</h1>
+
+        <select id="dropdown" onchange="select()">
+            <option value="">極速照片</option>
+            <option value="photo1">照片1</option>
+            <option value="photo2">照片2</option>
+            <option value="photo3">照片3</option>
+            <option value="photo4">照片4</option>
+        </select>
+        <h3 id="show"></h3>
+        <img id="image" src="" alt="photo" width="150px" height="300px">
+
+        <h2>onchange event練習2</h2>
+        <select id="dropdown1" onchange="secon()">
+            <option value="">想看哪張</option>
+            <option value="my-love">qilo</option>
+            <option value="our-pic1">pic1</option>
+            <option value="our-pic2">pic2</option>
+            <option value="our-story1">pic3</option>
+        </select>
+        <h3 id="love"></h3>
+        <img id="image1" src="" alt="photo1" width="100px" height="200px">
+    <script>
+        function select(){
+            var x=document.getElementById("dropdown").value;
+            document.getElementById("show").innerHTML="您選了:"+x;
+            document.getElementById("image").src="images/"+x+".png"
+        }
+        
+        function secon(){
+            var y=document.getElementById("dropdown1").value;
+            document.getElementById("love").innerHTML="您選了:"+y;
+            document.getElementById("image1").src="images/"+y+".jpg";
+        }
+        
+    </script>
+</body>
+</html>

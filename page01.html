@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json1</title>
+</head>
+<body>
+    <h2 style="color: yellow;background-color:rgb(41, 201, 49)">onclick1</h2>
+    <!-- <botton onclick="document.getElementById('great').innerHTML='<h2>I love you</h2>'">開啟</botton>
+    <botton onclick="document.getElementById('great').innerHTML='<h2 style=color:gold;>I love you</h2>'">金色</botton>
+    <botton onclick="document.getElementById('great').innerHTML=''">關閉</botton> -->
+    <botton onclick="great1()">開啟</botton>
+    <botton onclick="great2()">金色</botton>
+    <botton onclick="great3()">關閉</botton>
+    <p id="great"></p>
+    <script>
+        function great1(){
+            document.getElementById('great').innerHTML='<h2>I love you</h2>'
+        }
+        function great2(){
+            document.getElementById('great').innerHTML='<h2 style=color:gold;>I love you</h2>'
+        }
+        function great3(){
+            document.getElementById('great').innerHTML=''
+        }
+    </script>
+</body>
+</html>
